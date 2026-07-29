@@ -28,6 +28,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build
+        env:
+          VITE_SUPABASE_URL: https://mnpvaekqbbqnijbzdqiy.supabase.co
+          VITE_SUPABASE_PUBLISHABLE_KEY: sb_publishable_UUvfV8X-mLPivathxX1Kkg_eCRM_Lb1
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
