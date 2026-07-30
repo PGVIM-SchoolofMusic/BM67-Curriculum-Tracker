@@ -47,3 +47,44 @@
 .auth-brand{gap:16px}
 .loading-card .auth-mark{margin:0}
 @media(max-width:760px){.topbar-title{flex:1}}
+
+/* Balanced spacing system */
+.content{padding:44px clamp(28px,3.2vw,52px) 34px}
+.page-stack{gap:24px}
+.welcome{gap:28px;margin-bottom:30px}
+.student-strip{margin-bottom:24px}
+.overview-grid,.metrics,.term-grid,.grade-workspace,.advising-grid{gap:22px}
+.metrics,.student-guide,.course-panel{margin-top:22px}
+.progress-card,.attention-card{padding:28px}
+.metrics article{padding:22px 24px}
+.student-guide,.course-panel{padding:28px}
+.curriculum-header,.grade-banner,.advising-header{padding:32px 34px}
+.catalog-search{padding:38px}
+.term-card,.grade-workspace>aside,.grade-entry{padding:24px}
+.advisor-summary,.advisor-contact{padding:30px}
+.advice-list{gap:12px}
+.advice-list>div{padding:14px}
+footer{padding-top:36px}
+
+@media(max-width:760px){
+  .content{padding:28px 18px 24px}
+  .page-stack{gap:18px}
+  .welcome{gap:18px;margin-bottom:22px}
+  .student-strip{margin-bottom:18px}
+  .overview-grid,.metrics,.term-grid,.grade-workspace,.advising-grid{gap:18px}
+  .metrics,.student-guide,.course-panel{margin-top:18px}
+  .progress-card,.attention-card,.student-guide,.course-panel{padding:22px}
+  .curriculum-header,.grade-banner,.advising-header{padding:25px 22px}
+  .catalog-search{padding:28px 22px}
+  .term-card,.grade-workspace>aside,.grade-entry,.advisor-summary,.advisor-contact{padding:22px}
+}
+
+@media(max-width:520px){
+  .content{padding:22px 14px 20px}
+  .page-stack{gap:16px}
+  .overview-grid,.metrics,.term-grid,.grade-workspace,.advising-grid{gap:16px}
+  .progress-card,.attention-card,.student-guide,.course-panel{padding:19px}
+  .curriculum-header,.grade-banner,.advising-header,.catalog-search{padding:22px 18px}
+  .term-card,.grade-workspace>aside,.grade-entry,.advisor-summary,.advisor-contact{padding:19px}
+  footer{padding-top:28px}
+}
